@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lab2_v9_Shumeiko.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="10" Spacing="10">
+
+            <Button Text="Select File"
+                    HorizontalOptions="Start"
+                    Clicked="OnSelectFileClicked" />
+
+            <VerticalStackLayout Spacing="5">
+                <Label Text="Select parser type"
+                       FontAttributes="Bold" />
+                <HorizontalStackLayout Spacing="10">
+                    <RadioButton x:Name="SAXRadioButton" Content="SAX" GroupName="ParserType" />
+                    <RadioButton x:Name="DOMRadioButton" Content="DOM" GroupName="ParserType" />
+                    <RadioButton x:Name="LINQRadioButton" Content="LINQ to XML" GroupName="ParserType" IsChecked="True" />
+
+                    <Button Text="Search"
+                    HorizontalOptions="End"
+                    Clicked="OnSearchButtonClicked" />
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+
+            <Grid ColumnDefinitions="Auto, *, Auto" RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto" RowSpacing="10" ColumnSpacing="10">
+             
+                <CheckBox x:Name="NameCheckBox" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" />
+                <Label Text="Name of program tools" Grid.Row="0" Grid.Column="1" VerticalOptions="Center" />
+                <Entry x:Name="NameEntry" Grid.Row="0" Grid.Column="2" Placeholder="Enter keyword" HorizontalOptions="Fill" />
+          
+                <CheckBox x:Name="TypeCheckBox" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" />
+                <Label Text="Type" Grid.Row="1" Grid.Column="1" VerticalOptions="Center" />
+                <Entry x:Name="TypeEntry" Grid.Row="1" Grid.Column="2" Placeholder="Enter keyword" HorizontalOptions="Fill" />
+               
+                <CheckBox x:Name="VersionCheckBox" Grid.Row="2" Grid.Column="0" VerticalOptions="Center" />
+                <Label Text="Version" Grid.Row="2" Grid.Column="1" VerticalOptions="Center" />
+                <Entry x:Name="VersionEntry" Grid.Row="2" Grid.Column="2" Placeholder="Enter keyword" HorizontalOptions="Fill" />
+            
+                <CheckBox x:Name="LicenseCheckBox" Grid.Row="3" Grid.Column="0" VerticalOptions="Center" />
+                <Label Text="License" Grid.Row="3" Grid.Column="1" VerticalOptions="Center" />
+                <Entry x:Name="LicenseEntry" Grid.Row="3" Grid.Column="2" Placeholder="Enter keyword" HorizontalOptions="Fill" />
+             
+                <CheckBox x:Name="UsageCheckBox" Grid.Row="4" Grid.Column="0" VerticalOptions="Center" />
+                <Label Text="Usage" Grid.Row="4" Grid.Column="1" VerticalOptions="Center" />
+                <Entry x:Name="UsageEntry" Grid.Row="4" Grid.Column="2" Placeholder="Enter keyword" HorizontalOptions="Fill" />
+
+                <CheckBox x:Name="PlatformCheckBox" Grid.Row="5" Grid.Column="0" VerticalOptions="Center" />
+                <Label Text="Platform" Grid.Row="5" Grid.Column="1" VerticalOptions="Center" />
+                <Entry x:Name="PlatformEntry" Grid.Row="5" Grid.Column="2" Placeholder="Enter keyword" HorizontalOptions="Fill" />
+            </Grid>
+
+            <ListView x:Name="ResultsList"
+                      HeightRequest="200" />
+
+            <HorizontalStackLayout Spacing="10">
+                <Button Text="Clear"
+                        Clicked="OnClearButtonClicked" />
+                <Button Text="Transform to HTML"
+                        Clicked="OnTransformButtonClicked" />
+                <Button Text="Exit"
+                        Clicked="OnExitButtonClicked" />
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

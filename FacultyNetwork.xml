@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FacultyNetwork>
+    <SoftwareCategory name="Development Tools" type="IDE" version="2.0" license="Free">
+        <Software>
+            <Name>Visual Studio</Name>
+            <Description>Integrated Development Environment by Microsoft</Description>
+            <Type>IDE</Type>
+            <Version>2019</Version>
+            <Author>Microsoft</Author>
+            <Terms>Commercial</Terms>
+            <Distribution>Online Installer</Distribution>
+        </Software>
+        <Software>
+            <Name>Android Studio</Name>
+            <Description>Android Development Environment by Google</Description>
+            <Type>IDE</Type>
+            <Version>4.1</Version>
+            <Author>Google</Author>
+            <Terms>Free</Terms>
+            <Distribution>Offline Installer</Distribution>
+        </Software>
+    </SoftwareCategory>
+
+    <SoftwareCategory name="Data Analysis" type="IDE" usage="Research" platform="Cross-platform">
+        <Software>
+            <Name>Jupyter Notebook</Name>
+            <Description>Interactive notebooks for data analysis and visualization</Description>
+            <Type>Notebook</Type>
+            <Version>6.0</Version>
+            <Author>Jupyter Community</Author>
+            <Terms>Open Source</Terms>
+            <Distribution>Package Manager</Distribution>
+        </Software>
+        <Software>
+            <Name>RStudio</Name>
+            <Description>IDE for R programming language</Description>
+            <Type>IDE</Type>
+            <Version>1.3</Version>
+            <Author>RStudio, PBC</Author>
+            <Terms>Open Source</Terms>
+            <Distribution>Package Manager</Distribution>
+        </Software>
+    </SoftwareCategory>
+
+    <SoftwareCategory name="Security Tools" type="Antivirus" license="Commercial">
+        <Software>
+            <Name>Kaspersky</Name>
+            <Description>Comprehensive antivirus solution</Description>
+            <Type>Antivirus</Type>
+            <Version>2023</Version>
+            <Author>Kaspersky Lab</Author>
+            <Terms>Paid</Terms>
+            <Distribution>Online Installer</Distribution>
+        </Software>
+        <Software>
+            <Name>McAfee</Name>
+            <Description>Antivirus and anti-malware protection</Description>
+            <Type>Antivirus</Type>
+            <Version>2022</Version>
+            <Author>McAfee, Inc.</Author>
+            <Terms>Subscription</Terms>
+            <Distribution>Offline Installer</Distribution>
+        </Software>
+    </SoftwareCategory>
+
+    <SoftwareCategory name="Web Browsers" usage="General" platform="Multi-platform">
+        <Software>
+            <Name>Google Chrome</Name>
+            <Description>Popular web browser developed by Google</Description>
+            <Type>Browser</Type>
+            <Version>115.0</Version>
+            <Author>Google</Author>
+            <Terms>Free</Terms>
+            <Distribution>Online Installer</Distribution>
+        </Software>
+        <Software>
+            <Name>Mozilla Firefox</Name>
+            <Description>Open-source web browser</Description>
+            <Type>Browser</Type>
+            <Version>118.0</Version>
+            <Author>Mozilla Foundation</Author>
+            <Terms>Free</Terms>
+            <Distribution>Package Manager</Distribution>
+        </Software>
+    </SoftwareCategory>
+
+    <SoftwareCategory name="Graphic Design" type="Editor" version="Pro" platform="Windows">
+        <Software>
+            <Name>Adobe Photoshop</Name>
+            <Description>Professional photo editing software</Description>
+            <Type>Editor</Type>
+            <Version>2024</Version>
+            <Author>Adobe Inc.</Author>
+            <Terms>Subscription</Terms>
+            <Distribution>Online Installer</Distribution>
+        </Software>
+        <Software>
+            <Name>CorelDRAW</Name>
+            <Description>Vector graphic design software</Description>
+            <Type>Editor</Type>
+            <Version>24.0</Version>
+            <Author>Corel Corporation</Author>
+            <Terms>Commercial</Terms>
+            <Distribution>Offline Installer</Distribution>
+        </Software>
+    </SoftwareCategory>
+
+    <SoftwareCategory name="Communication Tools" type="Messaging" platform="Cross-platform" usage="Business">
+        <Software>
+            <Name>Slack</Name>
+            <Description>Team communication and collaboration platform</Description>
+            <Type>Messaging</Type>
+            <Version>4.29</Version>
+            <Author>Slack Technologies</Author>
+            <Terms>Freemium</Terms>
+            <Distribution>Online Installer</Distribution>
+        </Software>
+        <Software>
+            <Name>Microsoft Teams</Name>
+            <Description>Business communication platform</Description>
+            <Type>Messaging</Type>
+            <Version>1.5</Version>
+            <Author>Microsoft</Author>
+            <Terms>Subscription</Terms>
+            <Distribution>Online Installer</Distribution>
+        </Software>
+    </SoftwareCategory>
+
+    <SoftwareCategory name="Cloud Storage" type="Service" usage="Backup" platform="Multi-platform" license="Freemium">
+        <Software>
+            <Name>Google Drive</Name>
+            <Description>Cloud file storage and synchronization service</Description>
+            <Type>Service</Type>
+            <Version>3.56</Version>
+            <Author>Google</Author>
+            <Terms>Freemium</Terms>
+            <Distribution>Online</Distribution>
+        </Software>
+        <Software>
+            <Name>Dropbox</Name>
+            <Description>File hosting service offering cloud storage</Description>
+            <Type>Service</Type>
+            <Version>161.2</Version>
+            <Author>Dropbox, Inc.</Author>
+            <Terms>Freemium</Terms>
+            <Distribution>Online</Distribution>
+        </Software>
+    </SoftwareCategory>
+</FacultyNetwork>
